@@ -19,11 +19,19 @@ frontend:
 # Enables configuration UI
 config:
 
+# Access to other local services
+weblink:
+  entities:
+    - name: 'Routeur'
+      url: !secret ROUTER_URL
+      icon: mdi:router-wireless
+    - name: 'Pihole'
+      url: !secret PIHOLE_URL
+      icon: mdi:dns
+    
 # Uncomment this if you are using SSL/TLS, running in Docker container, etc.
 http:
   base_url: !secret BASE_URL
-  ssl_certificate: /ssl/fullchain.pem
-  ssl_key: /ssl/privkey.pem
 
 # Checks for available updates
 # Note: This component will send some information about your system to
