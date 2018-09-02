@@ -1,0 +1,7 @@
+.storage/auth
+secrets.yaml
+home-assistant_v2.db
+.uuid
+.storage/onboarding
+.storage/auth_provider.homeassistant
+.storage/hassio
