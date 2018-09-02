@@ -74,3 +74,14 @@ cloud:
 group: !include groups.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+
+device_tracker:
+  - platform: netgear
+    host: 192.168.1.1
+    password: !secret NETGEAR_PASSWORD
+    devices:
+      - !secret MAC_BELINDA
+      - !secret MAC_JULIEN
+      - !secret MAC_GERARD
+      - !secret MAC_MONIQUE
+
